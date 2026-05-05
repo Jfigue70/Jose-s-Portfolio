@@ -16,13 +16,17 @@ body {
     margin: 0;
     padding: 0;
 }
+h1 {
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 header, nav, footer, .card-row a {
     background-color: #104D73;
     color: white;
     padding: .5rem;
     font-weight: bolder;
 }
-nav a, .card-row a { 
+nav a, .card-row a, footer a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -38,12 +42,23 @@ nav ul {
     gap: .5rem;
     padding: 1rem;
 }
-nav a:hover, .card-row a:hover { 
+nav a:hover, .card-row a:hover, footer a:hover { 
     background-color: #91bdd9;
     color: #0d0d0d;
 }
 .quotes { 
     background-color: #A6847C;
+    padding: 1.5rem;
+}
+main {
+    padding: 1rem;
+}
+h2 {
+    font-size: 36px;
+    font-style: italic;
+}
+p {
+    font-size: 18px;
 }
 .card-row a {
     text-decoration: none;
@@ -60,4 +75,23 @@ nav a:hover, .card-row a:hover {
     gap: .5rem;
     margin: 1rem;
     padding: .5rem;
+}
+/* ===== MEDIA QUERY (MEDIUM ===== */
+@media screen and (min-width:1150px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 0;
+    }
+    nav a {
+        padding: 1.5rem;
+    }
+    .card-row {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card-row > section {
+        padding: 1.5rem;
+    }
 }
