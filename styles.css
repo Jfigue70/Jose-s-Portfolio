@@ -9,5 +9,55 @@ Black=#0D0D0D
 
 /* Global (base) MOBILE FIRST */
 body {
-    background-color: #91BDD9;
+    display: grid;
+    background-color: #0d0d0d;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header, nav, footer, .card-row a {
+    background-color: #104D73;
+    color: white;
+    padding: .5rem;
+    font-weight: bolder;
+}
+nav a, .card-row a { 
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    border: 6px solid #0d0d0d;
+    padding: .75rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+nav a:hover, .card-row a:hover { 
+    background-color: #91bdd9;
+    color: #0d0d0d;
+}
+.quotes { 
+    background-color: #A6847C;
+}
+.card-row a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 24px;
+}
+.card-row {
+    padding: 1rem;
+}
+.card-row > section { 
+    background-color: white;
+    color: #0d0d0d;
+    gap: .5rem;
+    margin: 1rem;
+    padding: .5rem;
 }
